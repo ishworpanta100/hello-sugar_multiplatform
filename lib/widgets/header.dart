@@ -64,38 +64,3 @@ class ProfileCard extends StatelessWidget {
     );
   }
 }
-
-class SearchField extends StatelessWidget {
-  const SearchField({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        hintText: "Search",
-        fillColor: const Color(0xFF373742),
-        filled: true,
-        border: const OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-        ),
-        suffixIcon: InkWell(
-          onTap: () {},
-          child: Container(
-            padding: const EdgeInsets.all(defaultPadding * 0.75),
-            margin: const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-            decoration: const BoxDecoration(
-              color: Color(0xFF373742),
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-            ),
-            child: const FlutterLogo(
-              size: 20,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
