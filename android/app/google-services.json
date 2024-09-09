@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "257289404993",
+    "project_id": "hello-sugar-web-test",
+    "storage_bucket": "hello-sugar-web-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257289404993:android:c98fe1a305d60cfa983cc0",
+        "android_client_info": {
+          "package_name": "com.outcode.hellosugar.hello_sugar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_gIs5giXBa68Dyb-JgYmzXZ0babRAaZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

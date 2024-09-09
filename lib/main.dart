@@ -1,13 +1,19 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
+import 'firebase_options.dart';
 import 'locator.dart';
 import 'main_screen.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   AndroidOptions getAndroidOptions() => const AndroidOptions(encryptedSharedPreferences: true);
   FlutterSecureStorage(aOptions: getAndroidOptions());
   setupLocator();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 

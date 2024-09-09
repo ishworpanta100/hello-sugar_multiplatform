@@ -45,6 +45,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         _dataList.add(text); // Add the text from the input field to the list
       });
       _controller.clear(); // Clear the text field after adding data
+      FocusScope.of(context).unfocus();
       _persistData(); // Persist data after adding
     }
   }
