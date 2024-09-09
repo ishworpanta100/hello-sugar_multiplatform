@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
+import 'locator.dart';
 import 'main_screen.dart';
 
-void main() {
+Future<void> main() async {
+  AndroidOptions getAndroidOptions() => const AndroidOptions(encryptedSharedPreferences: true);
+  FlutterSecureStorage(aOptions: getAndroidOptions());
+  setupLocator();
   runApp(const MyApp());
 }
 
